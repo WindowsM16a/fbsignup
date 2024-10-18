@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>facebook new</title>
+  </head>
+  <body>
+    <div class="container">
+      <img id="fblogo" src="facebooklogo.svg" alt="Facebook's Logo" />
+      <div class="main-box">
+        <form class="signupForm" action="https:www.facebook.com">
+          <div class="header">
+            <h2>Create a new account</h2>
+            <p>It's quick and easy.</p>
+            <hr />
+          </div>
+
+          <div class="user-name">
+            <input
+              type="text"
+              placeholder="First name"
+              name="firstName"
+              id="firstName"
+            />
+            <input
+              type="lastName"
+              placeholder="Surname"
+              name="lastName"
+              id="lastName"
+            />
+          </div>
+          <span class="date">
+            <div class="dob">
+              <label for="date"
+                >Date of birth<a><i class="fa fa-question-circle"></i></a
+              ></label>
+            </div>
+
+            <select id="day" name="day" required>
+              <option value="" disabled selected>17</option>
+              <script>
+                for (let i = 1; i <= 31; i++) {
+                  document.write(`<option value="${i}">${i}</option>`);
+                }
+              </script>
+            </select>
+
+            <select id="month" name="month" required>
+              <option value="" disabled selected>Oct</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
+            </select>
+
+            <select id="year" name="year" required>
+              <option value="" disabled selected>2024</option>
+              <script>
+                for (let i = 1900; i <= 2100; i++) {
+                  document.write(`<option value="${i}">${i}</option>`);
+                }
+              </script>
+            </select>
+          </span>
+          <div class="genderTitle">
+            <label for="gender"
+              >Gender<a><i class="fa fa-question-circle"></i></a
+            ></label>
+          </div>
+          <div class="gender">
+            <div class="female">
+              <label for="female">Female</label>
+              <input type="radio" id="female" name="gender" value="female" />
+            </div>
+
+            <div class="male">
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                checked
+              />
+            </div>
+
+            <div class="custom">
+              <label for="other">Custom</label>
+              <input type="radio" id="other" name="gender" value="other" />
+            </div>
+          </div>
+
+          <div class="emailPass">
+            <input
+              type="email"
+              placeholder="Mobile number or email address"
+              name="password"
+              id="emailPass"
+            />
+
+            <input
+              type="password"
+              placeholder="New password"
+              name="password"
+              id="password"
+            />
+          </div>
+
+          <p class="lightTxt">
+            People who use our services may have uploaded your contact
+            information to Facebook.
+            <a href="https://web.facebook.com/help/637205020878504"
+              >Learn More</a
+            >
+          </p>
+
+          <p class="lightTxt">
+            By clicking Sign Up, you agree to our
+            <a
+              id="normalLink"
+              href="https://web.facebook.com/legal/terms/update"
+              >Terms</a
+            >,<a
+              class="normalLink"
+              href="https://free.facebook.com/privacy/policy/#"
+              >Privacy Policy</a
+            >
+            and
+            <a
+              class="normalLink"
+              href="https://web.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0"
+              >Cookies Policy</a
+            >. You may receive SMS notifications from us and can opt out at any
+            time.
+          </p>
+          <div class="signupBtnLink">
+            <button id="signupBtn" type="submit">Sign Up</button>
+            <p>
+              <a
+                id="alreadyHaveLink"
+                href="https://web.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzI5MjAyODI0LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+                >Already have an account?</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
