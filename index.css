@@ -55,7 +55,6 @@ body {
     flex-grow: 1;
     justify-content: center;
     width: 25rem;
-    position: relative;
 }
 
 .header {
