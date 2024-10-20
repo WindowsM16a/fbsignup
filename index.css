@@ -244,11 +244,6 @@ input[type="password"]:focus {
     border: 0.05rem solid var(--border-color);
 }
 
-input[type="email"]:focus ::placeholder,
-input[type="password"]::placeholder :focus {
-    color: #0080ff;
-}
-
 .lightTxt {
     font-size: 0.7rem;
     color: var(--light-color);
